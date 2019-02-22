@@ -1,12 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
+import TodoContainer from './TodoContainer';
+import TodoInput from './TodoInput';
+import TodoList from './TodoList';
 
-class App extends Component {
-  render() {
-    return (
-      <div>
-      </div>
-    );
-  }
-}
+const App = () => (
+  <TodoContainer.Provider>
+    <TodoInput/>
+    <TodoList/>
+  </TodoContainer.Provider>
+)
 
 export default App;
